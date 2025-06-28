@@ -9,6 +9,9 @@ import { YouTubeHeader } from "@/components/youtube-header"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Bot, List } from "lucide-react"
 
+export const runtime = "edge"
+
+
 function WatchPageContent() {
   const searchParams = useSearchParams()
   const videoId = searchParams.get("v")

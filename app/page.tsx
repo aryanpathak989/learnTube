@@ -7,6 +7,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Play, Bot, BookOpen, Users, GraduationCap, Brain, Target } from "lucide-react"
 import { useRouter } from "next/navigation"
 
+export const runtime = "edge"
+
 export default function LandingPage() {
   const [url, setUrl] = useState("")
   const router = useRouter()

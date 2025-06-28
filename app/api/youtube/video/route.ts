@@ -1,6 +1,8 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { getVideoInfo } from "@/lib/youtube-parser"
 
+export const runtime = "edge"
+
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url)
   const videoId = searchParams.get("videoId")

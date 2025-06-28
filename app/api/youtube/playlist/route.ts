@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { GetPlaylistData } from 'youtube-search-api'
 
+export const runtime = "edge"
+
 interface PlaylistItem {
   id: string
   title: string
